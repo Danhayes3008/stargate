@@ -1,0 +1,202 @@
+body{
+    background-color: aqua;
+}
+
+#clock-hours{
+    position: fixed;
+    left:calc(100% +  -1111px);
+    top: 352.5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    background-color: white;
+    animation: rotation2 60s infinite linear;
+}
+
+#dial{
+    background-image: url("minecraft_stone1.jpg");
+    width: 320px;
+    position: absolute;
+    left: calc(100% + -1121px);
+    top: 342.5px;
+    height: 320px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotation3 60s infinite linear;
+}
+
+@keyframes rotation3 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+@keyframes rotation2 {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+.cir-effect {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: aqua;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 2;
+}
+.clock circle {cx:50; cy:50; r:41; stroke-width: 9; fill: none; stroke-dasharray: 357.5; }
+.clock circle:nth-of-type(1) { stroke: rgba(255,255,255,0.2); }
+.clock circle:nth-of-type(2) { filter: drop-shadow(0 0 5px 3px rgba(0,0,0,1));}
+
+.in-cir{
+    position: absolute;
+    left: 75px;
+    top: 75px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.cir-effect h3 {
+    position: absolute;
+    top: 50%;
+}
+
+.in-cir img{
+    width: 100%;
+    border-radius: 50%;
+    animation: rotation1 2s infinite linear;
+}
+@keyframes rotation1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.zero{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+}
+
+.one{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(30deg);
+    transform-origin: bottom;
+}
+
+.two{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(60deg);
+    transform-origin: bottom;
+}
+
+.three{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(90deg);
+    transform-origin: bottom;
+}
+
+.four{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(120deg);
+    transform-origin: bottom;
+}
+
+.five{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(150deg);
+    transform-origin: bottom;
+}
+
+.six{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(180deg);
+    transform-origin: bottom;
+}
+
+.seven{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(210deg);
+    transform-origin: bottom;
+}
+
+.eight{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(240deg);
+    transform-origin: bottom;
+}
+
+.nine{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(270deg);
+    transform-origin: bottom;
+}
+
+.ten{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(300deg);
+    transform-origin: bottom;
+}
+
+.eleven{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    transform: rotate(330deg);
+    transform-origin: bottom;
+}
+
+.text{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
